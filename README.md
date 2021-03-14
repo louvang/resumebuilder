@@ -2,7 +2,7 @@
 
 [Resume Builder](https://louvang.github.io/resumebuilder/) allows users to create a resume by inputting information through form elements. When the user selects "Print Mode", they can preview how their resume will look and choose to print it off from there. By default, the form is pre-filled but the user can select "Clear" to clear all form fields and fill in the information themselves.
 
-<p align="center"><a href="https://louvang.github.io/resumebuilder/" target="_blank"><img src="https://github.com/louvang/resumebuilder/blob/main/preview.gif?raw=true" alt="Resume Builder" width="750px" /></a></p>
+<p align="center"><a href="https://louvang.github.io/resumebuilder/" target="_blank"><img src="https://raw.githubusercontent.com/louvang/resumebuilder/master/preview.gif" alt="Resume Builder" width="750px" /></a></p>
 
 ## About Code
 

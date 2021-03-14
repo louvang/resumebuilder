@@ -1,13 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Almarai", sans-serif;
+  background-color: #c27b54;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
+.App {
+  width: 90%;
+  max-width: 900px;
+  margin: 0rem auto 3rem;
+  background-color: #fff;
+}
+
+header {
+  margin: 3rem auto 1rem;
+  background-color: #c27b54;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header button {
+  border: 3px solid #c27b54;
+  margin: 0 0.5rem 1rem 0;
+  padding: 0.75rem;
+  font-family: "Almarai", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  background-color: #c27b54;
+  border-radius: 0.75rem;
+}
+
+header button:hover {
+  background-color: #fff;
+  color: #c27b54;
+  border: 3px solid #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+header button.active {
+  border: 3px solid #fff;
+}
+
+header .btn-right {
+  margin: 0 0 1rem 0;
+}
+
+header button:focus {
+  outline: none;
+}
+
+.container {
+  margin: 2rem;
+  padding-bottom: 1rem;
+}
+
+.container button {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 0;
+  background-color: #fff;
+  border: 2px solid #777;
+  border-radius: 8px;
+  height: 36px;
+  color: #777;
+  font-family: "Almarai", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.container button.full-width {
+  width: 100%;
+  color: #000;
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+.container button.delete-section {
+  background-color: #fff;
+  border: 2px solid #bbb;
+  color: #bbb;
+}
+
+.container button:hover {
+  cursor: pointer;
+}
+
+.container button:focus {
+  outline: none;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-row {
+  margin-bottom: 1.5rem;
+}
+
+.col1 {
+  width: 100%;
+}
+
+.col2 {
+  width: 40%;
+}
+
+.col3 {
+  width: 31%;
+}
+
+.col4 {
+  width: 23%;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+input {
+  padding: 7px 0px 8px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #bbb;
+  font-size: 1rem;
+  font-family: "Almarai", sans-serif;
+  background-color: #f9f9f9;
+}
+
+input:focus {
+  outline: 0;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+:-ms-input-placeholder {
+  color: #ccc;
+}
+
+::-ms-input-placeholder {
+  color: #ccc;
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+input:disabled {
+  background-color: #fff;
+}
+
+textarea {
+  margin: 4px 0 1rem 0;
+  width: 100%;
+  height: 100px;
+  font-family: "Almarai", sans-serif;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  border: 0;
+}
+
+.responsibilities input,
+.extras input {
+  width: 90%;
+}
+
+.responsibilities button,
+.extras button {
+  margin-top: 7px;
+  margin-right: 2%;
+  padding-left: 0;
+  padding-right: 0;
+  width: 8%;
+}
+
+#print-mode h1 {
+  margin: 0;
+}
+
+#print-mode h2 {
+  margin: 1.5rem 0 0.75rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+}
+
+#print-mode .row {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+#print-mode .row-line {
+  border-bottom: 1px solid #000;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-size: 1.25rem;
+}
+
+#print-mode .bold {
+  font-weight: 700;
+}
+
+#print-mode .italic {
+  font-style: italic;
+}
+
+#print-mode ul {
+  margin: 4px 0 1rem;
+  padding-left: 2rem;
+}
+
+#print-mode li {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+@media print {
+  .container {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+    width: 100%;
+  }
+  header {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

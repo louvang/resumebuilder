@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap');
+
+$main-font: 'Almarai', sans-serif;
+
+body {
+  margin: 0;
+  font-family: $main-font;
+  background-color: #c27b54;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.App {
+  width: 90%;
+  max-width: 900px;
+  margin: 0rem auto 3rem;
+  background-color: #fff;
+}
+
+header {
+  margin: 3rem auto 1rem;
+  background-color: #c27b54;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  button {
+    border: 3px solid #c27b54;
+    margin: 0 0.5rem 1rem 0;
+    padding: 0.75rem;
+    font-family: $main-font;
+    color: #fff;
+    font-weight: 700;
+    background-color: #c27b54;
+    border-radius: 0.75rem;
+  }
+
+  button:hover {
+    background-color: #fff;
+    color: #c27b54;
+    border: 3px solid #fff;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  button.active {
+    border: 3px solid #fff;
+  }
+
+  .btn-right {
+    margin: 0 0 1rem 0;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+.container {
+  margin: 2rem;
+  padding-bottom: 1rem;
+
+  button {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 0;
+    background-color: #fff;
+    border: 2px solid #777;
+    border-radius: 8px;
+    height: 36px;
+    color: #777;
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  button.full-width {
+    width: 100%;
+    color: #000;
+    border: 2px solid #000;
+    background-color: #fff;
+  }
+
+  button.delete-section {
+    background-color: #fff;
+    border: 2px solid #bbb;
+    color: #bbb;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.btn-row {
+  margin-bottom: 1.5rem;
+}
+
+.col1 {
+  width: 100%;
+}
+
+.col2 {
+  width: 40%;
+}
+
+.col3 {
+  width: 31%;
+}
+
+.col4 {
+  width: 23%;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+input {
+  padding: 7px 0px 8px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #bbb;
+  font-size: 1rem;
+  font-family: $main-font;
+  background-color: #f9f9f9;
+}
+
+input:focus {
+  outline: 0;
+}
+
+::placeholder {
+  color: #ccc;
+}
+
+input:disabled {
+  background-color: #fff;
+}
+
+textarea {
+  margin: 4px 0 1rem 0;
+  width: 100%;
+  height: 100px;
+  font-family: $main-font;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  border: 0;
+}
+
+.responsibilities,
+.extras {
+  input {
+    width: 90%;
+  }
+
+  button {
+    margin-top: 7px;
+    margin-right: 2%;
+    padding-left: 0;
+    padding-right: 0;
+    width: 8%;
+  }
+}
+
+#print-mode {
+  h1 {
+    margin: 0;
+  }
+
+  h2 {
+    margin: 1.5rem 0 0.75rem;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+  }
+
+  .row {
+    margin: 0;
+    margin-bottom: 6px;
+  }
+
+  .row-line {
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-size: 1.25rem;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  ul {
+    margin: 4px 0 1rem;
+    padding-left: 2rem;
+  }
+
+  li {
+    margin: 0;
+    margin-bottom: 4px;
+  }
+}
+
+@media print {
+  .container {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+    width: 100%;
+  }
+
+  header {
+    display: none;
+  }
+}
